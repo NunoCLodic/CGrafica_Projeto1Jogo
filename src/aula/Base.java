@@ -10,7 +10,6 @@ import java.awt.Graphics;
 import java.awt.Rectangle;
 import javax.swing.ImageIcon;
 
-
 /**
  *
  * @author glauc
@@ -22,10 +21,10 @@ public abstract class Base {
     protected int incX = 1;
     protected int incY = 1;
     protected Color cor = Color.BLACK;
-    protected Color borda = Color.GREEN;
-    protected int largura=30;
-    protected int altura=30;
-    protected Rectangle rect = new Rectangle(0,0,30,30);
+    protected Color borda = Color.RED;
+    protected int largura=20;
+    protected int altura=20;
+    protected Rectangle rect = new Rectangle(0,0,20,20);
     protected ImageIcon img;
     
     
@@ -112,8 +111,6 @@ public abstract class Base {
        
     }
        
-    
-
     public void mover() {
         x = x + incX;
         y = y + incY;
@@ -181,7 +178,17 @@ public abstract class Base {
 
     @Override
     public String toString() {
-        return "Base{" + "x=" + x + ", y=" + y + ", incX=" + incX + ", incY=" + incY + ", cor=" + cor + ", borda=" + borda + ", largura=" + largura + ", altura=" + altura + ", rect=" + rect + ", img=" + img + '}';
+        return "Base{" + "x=" + x +
+                ", y=" + y +
+                ", incX=" + incX +
+                ", incY=" + incY + 
+                ", cor=" + cor + 
+                ", borda=" + borda +
+                ", largura=" + largura + 
+                ", altura=" + altura + 
+                ", rect=" + rect + 
+                ", img=" + img + 
+                '}';
     }
     
     
